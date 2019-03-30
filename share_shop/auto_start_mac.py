@@ -10,9 +10,9 @@ try:
 
 
 
-    hostname = '74.207.252.20'
-    username = 'dmedakovic'
-    password = 'medakovic'
+    hostname = ''
+    username = ''
+    password = ''
     
     s.login(hostname, username, password)
     print("[+] Successful SSH login.")

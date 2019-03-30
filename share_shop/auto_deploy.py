@@ -6,16 +6,16 @@ import time
 try:
     s = pxssh.pxssh()
 
-    hostname = '74.207.252.20'
-    username = 'dmedakovic'
-    password = 'medakovic'
+    hostname = ''
+    username = ''
+    password = ''
     
     s.login(hostname, username, password)
    
 
     
     name = "share_shopping"
-    ACTOKEN = 'UTfyZCCs4f3H6TZQGjux'
+    ACTOKEN = ''
 
     s.sendline('find -delete')
     s.prompt()
@@ -33,10 +33,6 @@ try:
     s.prompt()
     print(s.before)
 
-    # s.sendline('python3 manage.py runserver 0.0.0.0:8000')
-    # s.prompt()
-    # print(s.before)
-
 
     s.logout()
 except pxssh.ExceptionPxssh as e:
@@ -45,4 +41,3 @@ except pxssh.ExceptionPxssh as e:
 
    
 
-    'https://oauth2:UTfyZCCs4f3H6TZQGjux@gitlab.stud.idi.ntnu.no/programvareutvikling-v19/gruppe-3.git'
